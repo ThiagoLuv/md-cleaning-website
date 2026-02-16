@@ -587,3 +587,162 @@ footer a:hover {
     transform: scale(1.15);
     opacity: 0.85;
 }
+
+/* ================= RESPONSIVE PATCH (KEEP DESKTOP SAME) ================= */
+
+/* Make containers breathe on small screens */
+@media (max-width: 1024px) {
+  .container,
+  .header-wrap {
+    padding-left: 18px;
+    padding-right: 18px;
+  }
+}
+
+/* Tablet */
+@media (max-width: 900px) {
+
+  /* Header: stack logo + nav if it gets tight */
+  .header-wrap {
+    flex-wrap: wrap;
+    gap: 12px;
+  }
+
+  nav a {
+    margin-left: 14px;
+  }
+
+  /* Hero: reduce spacing */
+  .hero {
+    padding: 90px 18px 100px;
+  }
+
+  .hero h1 {
+    font-size: 36px;
+    line-height: 1.15;
+  }
+
+  .hero p {
+    font-size: 16px;
+  }
+
+  /* CTA: center items nicely */
+  .cta-wrap {
+    justify-content: center;
+    text-align: center;
+  }
+
+  /* Contact already stacks at 900px (you have it) */
+  .contact-card {
+    justify-self: stretch;
+  }
+}
+
+/* Phone */
+@media (max-width: 700px) {
+
+  /* Don’t hide nav completely unless you want that.
+     You currently have: nav { display:none; }
+     If you WANT to keep it hidden, leave your rule.
+     If you want links visible, comment your rule and use wrap: */
+  nav {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    justify-content: center;
+    width: 100%;
+  }
+
+  nav a {
+    margin-left: 0;
+  }
+
+  .btn-quote {
+    padding: 10px 14px;
+  }
+
+  /* Header layout */
+  .header-wrap {
+    justify-content: center;
+    text-align: center;
+  }
+
+  /* Hero */
+  .hero {
+    padding: 75px 16px 85px;
+  }
+
+  .hero h1 {
+    font-size: 30px;
+  }
+
+  .btn {
+    width: 100%;
+    max-width: 420px;
+  }
+
+  /* Cards spacing */
+  .section {
+    padding: 60px 16px;
+  }
+
+  .cards {
+    gap: 18px;
+  }
+
+  /* Owner block */
+  .owner-flex {
+    justify-content: center;
+    text-align: center;
+  }
+
+  /* Contact form: stack bedrooms/bathrooms */
+  .form-row {
+    flex-direction: column;
+    gap: 14px;
+  }
+
+  .field-small {
+    flex: 1 1 auto;
+    width: 100%;
+  }
+
+  /* Center submit button */
+  .contact-form button {
+    width: 100%;
+    max-width: 420px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  /* Footer */
+  footer {
+    padding: 50px 16px;
+  }
+}
+
+/* Small phones */
+@media (max-width: 420px) {
+  .hero h1 {
+    font-size: 26px;
+  }
+
+  .section-title h2 {
+    font-size: 24px;
+  }
+
+  .card {
+    padding: 22px;
+  }
+
+  .contact-form input,
+  .contact-form textarea {
+    padding: 12px;
+  }
+}
+
+/* Make all images responsive (safe global rule) */
+img {
+  max-width: 100%;
+  height: auto;
+}
