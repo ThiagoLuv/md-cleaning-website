@@ -26,7 +26,7 @@ header {
     background: white;
     z-index: 999;
     border-bottom: 1px solid #eee;
-    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.06);
+
 }
 
 .header-wrap {
@@ -36,13 +36,21 @@ header {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.10);
+
 }
 
 .logo {
+    display: flex;
+    align-items: center;
+    gap: 10px;
     font-weight: bold;
     font-size: 20px;
     color: var(--green-main);
+}
+
+.logo img{
+    height: 32px;
+    width: auto;
 }
 
 nav a {
@@ -61,7 +69,12 @@ nav a {
 
 /* HERO */
 .hero {
-    background: linear-gradient(var(--green-soft), white);
+    background:
+    linear-gradient(rgba(255,255,255,0.75), rgba(255,255,255,0.75));
+    background-image: url(../img/mainimg.png);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
     text-align: center;
     padding: 120px 20px 140px;
 }
@@ -242,11 +255,18 @@ header {
 }
 
 .logo {
+   display: flex;
+    align-items: center;
+    gap: 10px;
     font-weight: bold;
     font-size: 20px;
     color: var(--green-main);
 }
 
+.logo img{
+    height: 32px;
+    width: auto;
+}
 nav a {
     margin-left: 22px;
     text-decoration: none;
@@ -269,9 +289,14 @@ nav a:hover {
 /* ================= HERO ================= */
 
 .hero {
-    background: linear-gradient(var(--green-soft), white);
+    background:
+    linear-gradient(rgba(255,255,255,0.75), rgba(255,255,255,0.75));
+    background-image: url(../img/mainimg1.png);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
     text-align: center;
-    padding: 110px 20px 130px;
+    padding: 120px 20px 140px;
 }
 
 .hero h1 {
