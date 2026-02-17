@@ -222,10 +222,10 @@ footer a {
 }
 
 :root {
-    --green-main: #6239f7;
-    --green-soft: #7d5cf5;
-    --green-pastel: #cdc3ee;
-    --text-dark: #1f2d26;
+    --green-main: #549a3f;
+    --green-soft: #7bc266;
+    --green-pastel: #d5f5cb;
+    --text-dark: #3f549a;
     --gray-soft: #f6f8f7;
 }
 
@@ -264,7 +264,7 @@ header {
 }
 
 .logo img{
-    height: 58px;
+    height: 72px;
     width: auto;
 }
 nav a {
@@ -272,7 +272,7 @@ nav a {
     text-decoration: none;
     color: var(--text-dark);
     font-weight: 500;
-    font-size: 15px;
+    font-size: 18px;
 }
 
 nav a:hover {
